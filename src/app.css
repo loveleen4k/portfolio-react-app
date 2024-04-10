@@ -13,18 +13,18 @@
 
     #photo{
         border-radius: 50%;
-        min-width: 80px;
-        min-height: 80px;
+        width: 80px;
+        height: 80px;
         margin-top: 25%;
         padding: 0 20px;
         transition: 1s ease;
     }
 
     #photo:hover {
-        width: 150%;
-        height: 150%;
+        width: 200px;
+        height: 200px;
     }
-    
+
     #space{
         flex-grow: 10;
     }
