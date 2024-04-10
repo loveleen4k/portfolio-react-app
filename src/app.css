@@ -19,7 +19,6 @@ html {
 #photo {
     display: flex;
     margin: auto;
-    border: 2px solid rgb(203, 190, 204);
     width: 125px;
     height: 125px;
     border-radius: 50%;
