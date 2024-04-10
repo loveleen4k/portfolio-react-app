@@ -22,6 +22,8 @@ html {
     border-radius: 50%;
     width: 125px;
     height: 125px;
+    min-width: 75px;
+    min-height: 75px;
     justify-self: center;
     padding: 0 20px;
     transition: 1s ease;
