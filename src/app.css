@@ -1,89 +1,123 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap");
 
-    html {
-        background-image: linear-gradient(to right, #364a63 30%, #603c41 70%);
-        color:rgb(255, 255, 255);
-        font-family: "Tektur", cursive;
-        position: relative;
-    }
-    
-    #main {
-        display: flex;
-        flex-direction: row;
-    }
+/* Base styles */
+html {
+    background-image: linear-gradient(to right, #364a63 30%, #603c41 70%);
+    color: rgb(255, 255, 255);
+    font-family: "Tektur", cursive;
+    position: relative;
+}
 
-    #photo{
-        display: flex;
-        margin: auto;
-        border-radius: 50%;
-        width: 80px;
-        height: 80px;
-        justify-self: center;
-        padding: 0 20px;
-        transition: 1s ease;
+/* Main container */
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Profile photo */
+#photo {
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    justify-self: center;
+    padding: 0 20px;
+    transition: 1s ease;
+}
+
+/* Hover effect for photo */
+#photo:hover {
+    width: 200px;
+    height: 200px;
+}
+
+/* Space filler */
+#space {
+    flex-grow: 10;
+}
+
+/* Bio section */
+#bio {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Name styling */
+#name {
+    font-size: 40px;
+}
+
+/* Contact info */
+#contact {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-right: 2%;
+    font-size: large;
+}
+
+/* Icon size */
+#icons {
+    font-size: x-small;
+}
+
+/* Social icons */
+#icons > img {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+/* Anchor tag icons */
+a > img {
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+
+/* Adjust for content height */
+#b {
+    height: 5000px;
+}
+
+/* Styling for links */
+.my-link {
+    font-size: larger;
+    color: white;
+}
+
+/* Hover effect for links */
+.my-link:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    #photo {
+        width: 60px;
+        height: 60px;
     }
 
     #photo:hover {
-        display: flex;
-        justify-self: center;
-        width: 200px;
-        height: 200px;
-        margin:auto;
-    }
-
-    #space{
-        flex-grow: 10;
-    }
-
-    #bio {
-        padding-left: 10px;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+        width: 150px;
+        height: 150px;
     }
 
     #name {
-        font-size: 40px;
+        font-size: 30px;
     }
 
-    #contact {
-        flex-shrink: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding-right: 2%;
-        text-align: center;
-        font-size: large;
-        
+    #icons > img,
+    a > img {
+        width: 30px;
+        height: 30px;
     }
-    #icons{
-        font-size: x-small;
-    }
-    #icons>img{
-        width: 35px;
-        height: 35px;
-        margin:5px;
-    }
-    a>img{
-        width: 35px;
-        height: 35px;
-        margin:5px;
-    }
-    #b{
-        height: 5000px;
-    }
-    
-    .my-link{
-        font-size: larger;
-        color: white;
-
-    }
-
-    .my-link:hover {
-        color: rgb(0, 0, 0);
-    }
-
-      
+}
