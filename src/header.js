@@ -1,4 +1,5 @@
 import React from "react";
+import "./app.css";
 const picture="profile-pic.jpg";
 
 export default function Header(){
