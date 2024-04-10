@@ -34,16 +34,16 @@ export default function Details(){
     <Router>
       
       <Navigation>
-        <NavLink to="/aboutme">About Me</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/certifications">Certifications</NavLink>
+        <NavLink to="/portfolio-react-app/aboutme">About Me</NavLink>
+        <NavLink to="/portfolio-react-app/projects">Projects</NavLink>
+        <NavLink to="/portfolio-react-app/certifications">Certifications</NavLink>
       </Navigation>
       <hr/>
         <Routes>
-          <Route path={""} element={<AboutMe />} />
-          <Route path={"/aboutme"} element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/certifications" element={<Certifications />} />
+          <Route path={"/portfolio-react-app"} element={<AboutMe />} />
+          <Route path={"/portfolio-react-app/aboutme"} element={<AboutMe />} />
+          <Route path="/portfolio-react-app/projects" element={<Projects />} />
+          <Route path="/portfolio-react-app/certifications" element={<Certifications />} />
         </Routes>
       
     </Router>
