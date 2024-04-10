@@ -18,7 +18,7 @@ export default function Header(){
             <div id="contact">
                 <h4>contact me</h4>
                 <div id="icons">
-                    <a href="https://github.com/loveleen4k"><img alt="github" src="png/github-icon.jpg" /></a>
+                    <a href="https://github.com/loveleen4k"><img alt="github" src="png/github-icon.png" /></a>
                     <a href="https://www.linkedin.com/in/loveleenk14/"><img alt="linkedin" src="png/linked-in.png" /></a>
                     <a href="mailto:kambojloveleen@gmail.com"><img alt="email" src="png/mail.png" /></a>
                    

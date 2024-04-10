@@ -40,7 +40,8 @@ export default function Details(){
       </Navigation>
       <hr/>
         <Routes>
-          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path={"/"} exact element={<AboutMe />} />
+          <Route path={"/aboutme"} exact element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/certifications" element={<Certifications />} />
         </Routes>
