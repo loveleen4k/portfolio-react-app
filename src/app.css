@@ -6,35 +6,34 @@
         font-family: "Tektur", cursive;
         position: relative;
     }
-    #stick{
-        position: -webkit-sticky;
-        position: sticky;
-        background-image: linear-gradient(to right, #364a63 30%, #603c41 70%);
-        top: 0;
-    }
+    
     #main {
         display: flex;
     }
 
     #photo>img {
         border-radius: 50%;
-        min-width: 50px;
-        min-height: 50px;
+        min-width: 5rem;
+        min-height: 5rem;
         margin-top: 25%;
-        padding-left: 10px;
+        padding: 0 20px;
         transition: 1s ease;
     }
 
     #photo>img:hover {
-        width: 250px;
-        height: 250px;
+        width: 150%;
+        height: 150%;
+    }
+    #space{
+        flex-grow: 10;
     }
 
     #bio {
-        padding: auto;
+        padding-left: 10px;
         display: flex;
-        flex-grow: 3;
+        flex-wrap: nowrap;
         flex-direction: column;
+        z-index: 10;
         justify-content: center;
         text-align: center;
     }
@@ -44,11 +43,12 @@
     }
 
     #contact {
+        flex-shrink: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding-right: 20px;
+        padding-right: 2%;
         text-align: center;
         font-size: large;
         
