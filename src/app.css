@@ -55,9 +55,9 @@ html {
 
 /* Contact info */
 #contact {
-    flex-shrink: 1;
     display: flex;
     flex-direction: column;
+    margin:auto;
     justify-content: center;
     text-align: center;
     padding-right: 2%;
@@ -73,7 +73,7 @@ html {
 #icons > img {
     width: 35px;
     height: 35px;
-    margin: 5px;
+    margin: auto;
 }
 
 /* Anchor tag icons */
