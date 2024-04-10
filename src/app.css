@@ -9,20 +9,26 @@
     
     #main {
         display: flex;
+        flex-direction: row;
     }
 
     #photo{
+        display: flex;
+        margin: auto;
         border-radius: 50%;
         width: 80px;
         height: 80px;
-        margin-top: 1.2%;
+        justify-self: center;
         padding: 0 20px;
         transition: 1s ease;
     }
 
     #photo:hover {
+        display: flex;
+        justify-self: center;
         width: 200px;
         height: 200px;
+        margin:auto;
     }
 
     #space{
