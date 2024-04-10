@@ -17,9 +17,7 @@ export default function Header(){
         <div>
         <stick>
         <div id="main">
-            
-                <img id="photo" alt="profile-pic" id="pfp" src="profile-pic.jpg" />
-            
+        <img id="photo" alt="profile-pic" src="profile-pic.jpg" />
             
             <div id="bio">
                 <span id="name">Loveleen Kaur</span>Full Stack developer | Student at
