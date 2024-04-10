@@ -18,8 +18,10 @@
 
     #photo>img {
         border-radius: 50%;
-        height: 150px;
-        width: 150px;
+        min-width: 50px;
+        min-width: 50px;
+        max-height: 150px;
+        max-width: 150px;
         margin-top: 25%;
         padding-left: 10px;
         transition: 1s ease;
