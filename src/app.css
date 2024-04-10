@@ -19,11 +19,12 @@ html {
 #photo {
     display: flex;
     margin: auto;
-    border-radius: 50%;
+    min-width: 85px;
+    min-height: 85px;
     width: 125px;
     height: 125px;
-    min-width: 75px;
-    min-height: 75px;
+    border-radius: 50%;
+    border: 2px solid rgb(203, 190, 204);
     justify-self: center;
     padding: 0 20px;
     transition: 1s ease;
@@ -33,6 +34,7 @@ html {
 #photo:hover {
     width: 200px;
     height: 200px;
+    border-radius: 20%;
 }
 
 /* Space filler */
