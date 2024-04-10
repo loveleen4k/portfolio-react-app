@@ -13,8 +13,8 @@
 
     #photo>img {
         border-radius: 50%;
-        min-width: 5rem;
-        min-height: 5rem;
+        min-width: 80px;
+        min-height: 80px;
         margin-top: 25%;
         padding: 0 20px;
         transition: 1s ease;
