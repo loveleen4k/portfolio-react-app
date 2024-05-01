@@ -58,8 +58,6 @@ html {
 
 /* Contact info */
 #contact {
-    display: flex;
-    flex-direction: column;
     max-width: 15%;
     text-align: center;
     margin: auto;
@@ -74,7 +72,7 @@ html {
 }
 
 
-.icons>a{ 
+.icons>a>img{ 
     max-width: 100%;
     width: 100%;
     padding: 0 5% 0 5%;
@@ -123,7 +121,7 @@ html {
         max-width: 20%;
         margin: auto;
     }
-    .icons>a { 
+    .icons>a>img{ 
         width: 100%;
     }
     .info{
