@@ -93,7 +93,7 @@ html {
 }
 
 .info{
-    font-size: 110%;
+    font-size: 100%;
     height:calc(70vh);
     overflow-y:auto;
 }
@@ -126,6 +126,8 @@ html {
     .icons>a { 
         width: 100%;
     }
-
+    .info{
+        font-size: 80%;
+    }
     
 }
