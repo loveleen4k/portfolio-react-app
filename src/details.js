@@ -1,11 +1,10 @@
-import React,{ useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Fixed import for Routes
-import styled from 'styled-components';
+import React from "react";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
+import styled from "styled-components";
 
-import AboutMe from './aboutme';
-import Projects from './projects';
-import Certifications from './certifications';
-
+import AboutMe from "./aboutme";
+import Projects from "./projects";
+import Certifications from "./certifications";
 
 const Navigation = styled.div`
   display: flex;
@@ -26,33 +25,28 @@ const NavLink = styled(Link)`
   }
 `;
 
-
-
-
-export default function Details(){
-
-  useEffect(() => {
+export default function Details() {
+  /* useEffect(() => {
     if (window.location.pathname !== '/portfolio-react-app/') {
       window.location.href = '/portfolio-react-app/';
     }
   }, []);
+  */
 
-    return(
+  return (
     <Router>
-      
       <Navigation>
-        <NavLink to="/portfolio-react-app/aboutme">About Me</NavLink>
-        <NavLink to="/portfolio-react-app/projects">Projects</NavLink>
-        <NavLink to="/portfolio-react-app/certifications">Certifications</NavLink>
+        <NavLink to="/aboutme">About Me</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/certifications">Certifications</NavLink>
       </Navigation>
-      <hr/>
-        <Routes>
-          <Route path={"/portfolio-react-app"} element={<AboutMe />} />
-          <Route path={"/portfolio-react-app/aboutme"} element={<AboutMe />} />
-          <Route path="/portfolio-react-app/projects" element={<Projects />} />
-          <Route path="/portfolio-react-app/certifications" element={<Certifications />} />
-        </Routes>
-      
+      <hr />
+      <Routes>
+    <Route path="/" exact element={<AboutMe />} />
+      <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/certifications" element={<Certifications />} />
+      </Routes>
     </Router>
-    )
+  );
 }
