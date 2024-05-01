@@ -53,14 +53,14 @@ html {
 
 /* Name styling */
 #name {
-    font-size: 550%;
+    font-size: 530%;
 }
 
 /* Contact info */
 #contact {
     display: flex;
     flex-direction: column;
-    max-width: 10%;
+    max-width: 15%;
     text-align: center;
     margin: auto;
     font-size: 110%;
@@ -74,9 +74,10 @@ html {
 }
 
 
-.icons>a>img { 
+.icons>a{ 
     max-width: 100%;
     width: 100%;
+    padding: 0 5% 0 5%;
 }
 
 
@@ -102,29 +103,27 @@ html {
 
 @media screen and (max-width: 768px) {
     #photo {
-        width: 18%;
+        width: 15%;
         margin:auto;
     }
 
     #photo:hover {
-        width: 40%;
+        width: 35%;
     }
     
     #bio{
-        font-size: 70%;
+        font-size: 65%;
     }
 
     #name {
-        font-size: 250%;
+        font-size: 220%;
     }
     #contact{
-        font-size:75%;
-        max-width: 18%;
+        font-size:70%;
+        max-width: 20%;
         margin: auto;
     }
-
-
-    .icons>a>img { 
+    .icons>a { 
         width: 100%;
     }
 
