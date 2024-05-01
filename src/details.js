@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Fixed import for Routes
 import styled from 'styled-components';
 
@@ -13,10 +13,10 @@ const Navigation = styled.div`
 `;
 
 const NavLink = styled(Link)`
-  margin: 0 10px 0 10px;
-  padding: 05px 10px;
-  border: 1px solid #333;
+  font-size: 100%;
+  margin: 0;
   border-radius: 3px;
+  padding: 0 5% 0 5%;
   text-decoration: none;
   color: #fff;
   transition: background-color 0.3s ease;
@@ -30,6 +30,13 @@ const NavLink = styled(Link)`
 
 
 export default function Details(){
+
+  useEffect(() => {
+    if (window.location.pathname !== '/portfolio-react-app/') {
+      window.location.href = '/portfolio-react-app/';
+    }
+  }, []);
+
     return(
     <Router>
       

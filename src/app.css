@@ -17,80 +17,72 @@ html {
 
 /* Profile photo */
 #photo {
-    display: flex;
+    transition: 1s ease;
+    width:10%;
+    height: auto;
     margin: auto;
-    width: 125px;
-    height: 125px;
     border-radius: 50%;
     justify-self: center;
-    padding: 0 20px;
-    transition: 1s ease;
+    
 }
 
 /* Hover effect for photo */
 #photo:hover {
-    width: 225px;
-    height: 225px;
+    margin: auto;
+    width: 15%;
 }
 
 /* Space filler */
 #space {
-    flex-grow: 10;
+    flex-grow: 2;
 }
 
 /* Bio section */
 #bio {
-    padding-left: 10px;
+    padding:0 2%; 
+    font-size: 90%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    /* Styling for the bio */
+    margin-top: 0%;
+    margin: auto;
 }
 
 /* Name styling */
 #name {
-    font-size: 40px;
+    font-size: 550%;
 }
 
 /* Contact info */
 #contact {
     display: flex;
     flex-direction: column;
-    margin:auto;
-    justify-content: center;
+    max-width: 10%;
     text-align: center;
-    padding-right: 2%;
-    font-size: large;
-}
-
-/* Icon size */
-#icons {
-    font-size: x-small;
-}
-
-/* Social icons */
-#icons > img {
-    width: 35px;
-    height: 35px;
     margin: auto;
+    font-size: 110%;
 }
 
-/* Anchor tag icons */
-a > img {
-    width: 35px;
-    height: 35px;
-    margin: 5px;
+.icons{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
-/* Adjust for content height */
-#b {
-    height: 5000px;
+
+.icons>a>img { 
+    max-width: 100%;
+    width: 100%;
 }
+
 
 /* Styling for links */
 .my-link {
-    font-size: larger;
+    font-size: 100%;
     color: white;
 }
 
@@ -99,25 +91,44 @@ a > img {
     color: rgb(0, 0, 0);
 }
 
+.info{
+    font-size: 110%;
+    height:calc(70vh);
+    overflow-y:auto;
+}
+
+
 /* Media query for smaller screens */
+
 @media screen and (max-width: 768px) {
     #photo {
-        width: 60px;
-        height: 60px;
+        width: 18%;
+        margin:auto;
     }
 
     #photo:hover {
-        width: 150px;
-        height: 150px;
+        width: 40%;
+    }
+    
+    #bio{
+        font-size: 70%;
     }
 
     #name {
-        font-size: 30px;
+        font-size: 250%;
+    }
+    #contact{
+        font-size:75%;
+        max-width: 18%;
+        margin: auto;
     }
 
-    #icons > img,
-    a > img {
-        width: 30px;
-        height: 30px;
+
+    .icons>a>img { 
+        width: 100%;
+    }
+
+    .info{
+        height:calc(78vh);
     }
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects(){
     return(
-        <>
+        <div className="info">
         <section id="projects" class="tab-content-item">
         <h2>My Projects</h2>
         <ul>
@@ -30,6 +30,6 @@ export default function Projects(){
             <a class="my-link" href="https://github.com/loveleen4k/Netflix-homepage">GitHub Link</a>
             </li>
         </ul>
-        </section></>
+        </section></div>
     )
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutMe(){
     return (
-    <>
+    <div className="info">
     <section id="aboutme" class="tab-content-item show">
         <h2>About Me</h2>
         <p>Tech enthusiast with strong skills in programming languages such as Java, C++, and Python as well as web
@@ -21,6 +21,6 @@ export default function AboutMe(){
             <li>DSA</li>
             <li>Object Oriented Programming</li>
         </ul>
-    </section></>
+    </section></div>
     )
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Certifications(){
     return (
-        <>
+        <div className="info">
         <section id="certification" class="tab-content-item">
         <h2>My Certifications</h2>
         <ul>
@@ -17,6 +17,6 @@ export default function Certifications(){
                     Completion - The Complete Web Development Bootcamp, 2022 by Udemy</a></p></li>
             {/*<!--<li><a href=""></a></li>-->*/}
         </ul>
-    </section></>
+    </section></div>
     )
 }
