@@ -1,4 +1,4 @@
-#About My Prject->
+# About My Project->
 
 This is my personal portfolio site which is made with React Js. 
 I have->
