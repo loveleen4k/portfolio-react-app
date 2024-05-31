@@ -1,3 +1,12 @@
+#About My Prject->
+
+This is my personal portfolio site which is made with React Js. 
+I have->
+  Developed a dynamic and responsive portfolio application, integrating essential components such as navigation menus and styled components to showcase my skills and projects.
+  Implemented responsive design principles for optimal user experience across various devices.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
