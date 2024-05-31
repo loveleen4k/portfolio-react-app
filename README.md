@@ -1,6 +1,7 @@
 # About My Project->
 
 This is my personal portfolio site which is made with React Js. 
+
 I have->
 
   Developed a dynamic and responsive portfolio application, integrating essential components such as navigation menus and styled components to showcase my skills and projects.
